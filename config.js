@@ -1,12 +1,18 @@
 const fs = require('fs');
-if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
+if (fs.existsSync('config.env')) require('dotenv').config({
+    path: './config.env'
+});
 
 function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
+
+
 module.exports = {
-SESSION_ID: process.env.SESSION_ID,
-ALIVE_IMG : process.env.ALIVE_IMG || "https://pomf2.lain.la/f/uzu4feg.jpg",
-ALIVE_MSG : process.env.ALIVE_MSG || "*🤖𝐇𝐞𝐲 𝐈'𝐦 💃bot name 🤍 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐁𝐨𝐭⚡*\n\n*🔔𝐈'𝐦 𝐀𝐥𝐢𝐯𝐞 𝐍𝐨𝐰🎠*\n\n*⚖️𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 - : Bot Name",
-AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
+   SESSION_ID: process.env.SESSION_ID === undefined ? 'VAJIRA-MD=vU0z1LYI#fNlCGos-pk5-goUMomchasRRmjsSuZhty0yB9QqFns0' : process.env.SESSION_ID, 
+   DATABASE_URL: process.env.DATABASE_URL === undefined ? 'postgres://movie_my_user:BDXztL7cmv1gV26b9eCsAseSMp7tqyvW@dpg-co1n7jvsc6pc73ctrku0-a.oregon-postgres.render.com/movie_my' : process.env.DATABASE_URL,
+   PREFIX: process.env.PREFIX || '.' ,
+   JID: process.env.JID || `94719199757@s.whatsapp.net` , 
+   FOOTER: process.env.FOOTER === undefined ? 'TC TEAM MOVIE DL' : process.env.FOOTER
+
 };
