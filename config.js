@@ -9,10 +9,6 @@ function convertToBool(text, fault = 'true') {
 
 
 module.exports = {
-   SESSION_ID: process.env.SESSION_ID === undefined ? 'XjAQ2LSC#arMylQrImW4vngYNnmCccxBFSVCZ_Hr-FX8GQcSkhEs' : process.env.SESSION_ID, 
-   DATABASE_URL: process.env.DATABASE_URL === undefined ? 'postgres://movie_my_user:BDXztL7cmv1gV26b9eCsAseSMp7tqyvW@dpg-co1n7jvsc6pc73ctrku0-a.oregon-postgres.render.com/movie_my' : process.env.DATABASE_URL,
-   PREFIX: process.env.PREFIX || '.' ,
-   JID: process.env.JID || `94719199757@s.whatsapp.net` , 
-   FOOTER: process.env.FOOTER === undefined ? 'TC TEAM MOVIE DL' : process.env.FOOTER
-
+   SESSION_ID: process.env.SESSION_ID === undefined ? 'imIlnRbb#er2g2Q4d8vWVK2-wsKg67mvYhri_ma9zri6Kd7-vCEY' : process.env.SESSION_ID, 
+   
 };
